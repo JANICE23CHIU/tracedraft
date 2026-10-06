@@ -1,0 +1,866 @@
+{
+ "case_id": "K1",
+ "product": "Nimbus K1 Smart Kettle",
+ "conditions": [
+  {
+   "key": "standard",
+   "label": "Standard (23 °C)"
+  },
+  {
+   "key": "hot",
+   "label": "Hot (40 °C)"
+  },
+  {
+   "key": "cold",
+   "label": "Cold (5 °C)"
+  }
+ ],
+ "rows": [
+  {
+   "condition": "standard",
+   "test_name": "Boil time",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-101",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "specification": {
+     "value": "≤ 240 s for 1.0 L from 20 °C",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "n": {
+     "value": 30,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Boil time",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "Mean + 3σ ≤ 240 s",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-031",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Boil time"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Temperature hold accuracy",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-102",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "specification": {
+     "value": "70 °C ± 3 °C for 30 min",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "n": {
+     "value": 30,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Temperature hold accuracy",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All readings within 67 °C to 73 °C",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-032",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Temperature hold accuracy"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Lid opening force",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-103",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Lid opening force"
+     }
+    },
+    "specification": {
+     "value": "15 N to 35 N",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Lid opening force"
+     }
+    },
+    "n": {
+     "value": 30,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Lid opening force",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples within 15 N to 35 N",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Lid opening force"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-033",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Lid opening force"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Auto shut-off",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-104",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The kettle shall switch off within 10 s after the water boils.",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Auto shut-off",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-034",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Auto shut-off"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Dry-boil protection",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-105",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Dry-boil protection"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The heater shall cut power when the kettle is switched on empty.",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Dry-boil protection"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Dry-boil protection",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Dry-boil protection"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-035",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Dry-boil protection"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Handle surface temperature",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-106",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Handle surface temperature"
+     }
+    },
+    "specification": {
+     "value": "≤ 45 °C after 3 consecutive boils",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Handle surface temperature"
+     }
+    },
+    "n": {
+     "value": 10,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Handle surface temperature",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": null,
+     "status": "MISSING",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Handle surface temperature"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-036",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Handle surface temperature"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Water level readability",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-107",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Water level readability"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The level marks shall be readable at 0.5 m under 300 lx.",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Water level readability"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Water level readability",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Water level readability"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-112",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Water level readability"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Cord retraction endurance",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-108",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Cord retraction endurance"
+     }
+    },
+    "specification": {
+     "value": "≥ 5,000 cycles without damage",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Cord retraction endurance"
+     }
+    },
+    "n": {
+     "value": 10,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Cord retraction endurance",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples complete 5,000 cycles",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Cord retraction endurance"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-038",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Cord retraction endurance"
+     }
+    }
+   }
+  },
+  {
+   "condition": "hot",
+   "test_name": "Boil time",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-101",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "specification": {
+     "value": "≤ 240 s for 1.0 L from 20 °C",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "n": {
+     "value": 30,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Boil time",
+      "column": "Hot (40 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "Mean + 3σ ≤ 240 s",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-031",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Boil time"
+     }
+    }
+   }
+  },
+  {
+   "condition": "hot",
+   "test_name": "Temperature hold accuracy",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-102",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "specification": {
+     "value": "70 °C ± 3 °C for 30 min",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Temperature hold accuracy",
+      "column": "Hot (40 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All readings within 67 °C to 73 °C",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-032",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Temperature hold accuracy"
+     }
+    }
+   }
+  },
+  {
+   "condition": "hot",
+   "test_name": "Auto shut-off",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-104",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The kettle shall switch off within 10 s after the water boils.",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Auto shut-off",
+      "column": "Hot (40 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-034",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Auto shut-off"
+     }
+    }
+   }
+  },
+  {
+   "condition": "hot",
+   "test_name": "Handle surface temperature",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-106",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Handle surface temperature"
+     }
+    },
+    "specification": {
+     "value": "≤ 45 °C after 3 consecutive boils",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Handle surface temperature"
+     }
+    },
+    "n": {
+     "value": 10,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Handle surface temperature",
+      "column": "Hot (40 °C)"
+     }
+    },
+    "acceptance": {
+     "value": null,
+     "status": "MISSING",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Handle surface temperature"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-036",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Handle surface temperature"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Boil time",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-101",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "specification": {
+     "value": "≤ 240 s for 1.0 L from 20 °C",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "n": {
+     "value": 30,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Boil time",
+      "column": "Cold (5 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "Mean + 3σ ≤ 240 s",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Boil time"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-031",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Boil time"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Temperature hold accuracy",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-102",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "specification": {
+     "value": "70 °C ± 3 °C for 30 min",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Temperature hold accuracy",
+      "column": "Cold (5 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All readings within 67 °C to 73 °C",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Temperature hold accuracy"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-032",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Temperature hold accuracy"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Lid opening force",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-103",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Lid opening force"
+     }
+    },
+    "specification": {
+     "value": "15 N to 35 N",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Lid opening force"
+     }
+    },
+    "n": {
+     "value": 15,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Lid opening force",
+      "column": "Cold (5 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples within 15 N to 35 N",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Lid opening force"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-033",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Lid opening force"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Auto shut-off",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-104",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The kettle shall switch off within 10 s after the water boils.",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Auto shut-off",
+      "column": "Cold (5 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Auto shut-off"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-034",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Auto shut-off"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Cord retraction endurance",
+   "fields": {
+    "req_id": {
+     "value": "NK1-R-108",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Cord retraction endurance"
+     }
+    },
+    "specification": {
+     "value": "≥ 5,000 cycles without damage",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Cord retraction endurance"
+     }
+    },
+    "n": {
+     "value": 10,
+     "source": {
+      "doc_id": "VP-NK1-003",
+      "rev": "A",
+      "row": "Cord retraction endurance",
+      "column": "Cold (5 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples complete 5,000 cycles",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-NK1-001",
+      "rev": "B",
+      "row": "Cord retraction endurance"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-NK1-038",
+     "source": {
+      "doc_id": "TMX-NK1-002",
+      "rev": "A",
+      "row": "Cord retraction endurance"
+     }
+    }
+   }
+  }
+ ],
+ "conflicts": [
+  {
+   "test_name": "Boil time",
+   "field": "specification",
+   "authoritative": "≤ 240 s for 1.0 L from 20 °C",
+   "other": "≤ 250 s for 1.0 L from 20 °C",
+   "other_doc": "TMX-NK1-002"
+  }
+ ],
+ "planted": {
+  "attribute_tests": [
+   "Auto shut-off",
+   "Dry-boil protection",
+   "Water level readability"
+  ],
+  "missing_acceptance": [
+   "Handle surface temperature"
+  ],
+  "superseded_differs": [
+   "Lid opening force"
+  ],
+  "pattern_break_method": [
+   "Water level readability"
+  ],
+  "previous_model_distractor": [
+   "Boil time",
+   "Lid opening force",
+   "Handle surface temperature"
+  ]
+ }
+}

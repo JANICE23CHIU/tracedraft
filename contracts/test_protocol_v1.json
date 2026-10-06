@@ -1,0 +1,176 @@
+{
+  "contract_id": "test_protocol_v1",
+  "_about": "Field contract: human-maintained. Models never edit it. Names columns, sources, authority, eligibility and fixed rules for every field of one protocol row.",
+  "eligibility": {
+    "document_status": [
+      "APPROVED"
+    ],
+    "sections": {
+      "PRS": "^4 Requirements$",
+      "MTX": "^3 Test methods$",
+      "VP": "^7 Sample size$"
+    }
+  },
+  "membership": {
+    "role": "VP",
+    "not_performed": [
+      "—",
+      "-",
+      "N/A",
+      ""
+    ],
+    "note": "Which tests run under which condition, and how many samples, come only from the verification plan table (read deterministically)."
+  },
+  "fields": [
+    {
+      "name": "req_id",
+      "label": "Requirement ID",
+      "high_risk": false,
+      "units": [
+        {
+          "id": "row",
+          "role": "PRS",
+          "match": "row_key"
+        }
+      ],
+      "column": {
+        "PRS": "Req ID"
+      },
+      "rules": [
+        "Copy the requirement identifier exactly."
+      ],
+      "format": "^[A-Z0-9]+-R-\\d+$"
+    },
+    {
+      "name": "specification",
+      "label": "Specification",
+      "high_risk": true,
+      "units": [
+        {
+          "id": "row",
+          "role": "PRS",
+          "match": "row_key"
+        },
+        {
+          "id": "cross_check",
+          "role": "MTX",
+          "match": "row_key",
+          "optional": true
+        }
+      ],
+      "column": {
+        "PRS": "Specification Limit",
+        "MTX": "Specification (reference)"
+      },
+      "authority": [
+        "PRS",
+        "MTX"
+      ],
+      "attribute_rule": {
+        "type_column": "Type",
+        "type_value": "Attribute",
+        "statement_column": "Requirement",
+        "prefix": "Pass/Fail: ",
+        "prose_type_cue": "attribute",
+        "prose_statement_marker": "shall"
+      },
+      "rules": [
+        "Use the Specification Limit from the requirements specification (PRS).",
+        "If the requirement Type is Attribute, the limit is not numeric: write 'Pass/Fail: ' followed by the full Requirement sentence.",
+        "If the test method matrix states a different specification, keep the PRS value and report the conflict."
+      ],
+      "cues": [
+        "specification limit",
+        "spec limit",
+        "specification",
+        "limit"
+      ]
+    },
+    {
+      "name": "n",
+      "label": "Sample size",
+      "high_risk": false,
+      "units": [
+        {
+          "id": "row",
+          "role": "VP",
+          "match": "row_key"
+        }
+      ],
+      "column": {
+        "VP": "{condition_label}"
+      },
+      "rules": [
+        "Copy the sample size for this test under this condition from the verification plan table."
+      ]
+    },
+    {
+      "name": "acceptance",
+      "label": "Acceptance Criteria",
+      "high_risk": true,
+      "units": [
+        {
+          "id": "row",
+          "role": "PRS",
+          "match": "row_key"
+        }
+      ],
+      "column": {
+        "PRS": "DV Acceptance Criteria"
+      },
+      "missing_markers": [
+        "TBD",
+        "TBC",
+        "N/A",
+        ""
+      ],
+      "rules": [
+        "Copy the DV Acceptance Criteria exactly.",
+        "If it says TBD, the value is MISSING: do not invent one."
+      ],
+      "cues": [
+        "dv acceptance criteria",
+        "acceptance criteria",
+        "acceptance criterion",
+        "pass criteria",
+        "pass criterion",
+        "acceptance"
+      ]
+    },
+    {
+      "name": "test_instruction",
+      "label": "Test Instruction",
+      "high_risk": true,
+      "units": [
+        {
+          "id": "row",
+          "role": "MTX",
+          "match": "row_key"
+        }
+      ],
+      "column": {
+        "MTX": "Test Instruction"
+      },
+      "rules": [
+        "Copy the test instruction document number exactly; never guess it from the numbering pattern of other tests."
+      ],
+      "cues": [
+        "test instruction",
+        "instruction"
+      ],
+      "format": "^[A-Z]+-[A-Z0-9]+-\\d+$"
+    }
+  ],
+  "clause_rules": {
+    "_about": "Label vocabulary maintained by people. A field's value in prose is the text that follows one of its cues, up to the next cue of any field or the end of the sentence. Used by the verifier, and (prompt v3) shown to the model.",
+    "lead_words": [
+      "is",
+      "are",
+      "=",
+      ":",
+      "—",
+      "–",
+      "-"
+    ]
+  }
+}

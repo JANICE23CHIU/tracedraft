@@ -1,0 +1,35 @@
+{
+ "case_id": "F2",
+ "product": "Orbit F2 Desk Fan",
+ "documents": [
+  {
+   "doc_id": "PRS-OF2-001",
+   "rev": "C",
+   "role": "PRS",
+   "status": "APPROVED",
+   "path": "sources_proseB/PRS-OF2-001_revC.md"
+  },
+  {
+   "doc_id": "TMX-OF2-002",
+   "rev": "A",
+   "role": "MTX",
+   "status": "APPROVED",
+   "path": "sources_proseB/TMX-OF2-002_revA.md"
+  },
+  {
+   "doc_id": "VP-OF2-003",
+   "rev": "B",
+   "role": "VP",
+   "status": "APPROVED",
+   "path": "sources_proseB/VP-OF2-003_revB.md"
+  },
+  {
+   "doc_id": "PRS-OF2-001",
+   "rev": "B",
+   "role": "PRS",
+   "status": "SUPERSEDED",
+   "path": "sources_proseB/PRS-OF2-001_revB.md"
+  }
+ ],
+ "style": "proseB"
+}

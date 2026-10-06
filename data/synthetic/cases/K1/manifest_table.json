@@ -1,0 +1,35 @@
+{
+ "case_id": "K1",
+ "product": "Nimbus K1 Smart Kettle",
+ "documents": [
+  {
+   "doc_id": "PRS-NK1-001",
+   "rev": "B",
+   "role": "PRS",
+   "status": "APPROVED",
+   "path": "sources_table/PRS-NK1-001_revB.md"
+  },
+  {
+   "doc_id": "TMX-NK1-002",
+   "rev": "A",
+   "role": "MTX",
+   "status": "APPROVED",
+   "path": "sources_table/TMX-NK1-002_revA.md"
+  },
+  {
+   "doc_id": "VP-NK1-003",
+   "rev": "A",
+   "role": "VP",
+   "status": "APPROVED",
+   "path": "sources_table/VP-NK1-003_revA.md"
+  },
+  {
+   "doc_id": "PRS-NK1-001",
+   "rev": "A",
+   "role": "PRS",
+   "status": "SUPERSEDED",
+   "path": "sources_table/PRS-NK1-001_revA.md"
+  }
+ ],
+ "style": "table"
+}

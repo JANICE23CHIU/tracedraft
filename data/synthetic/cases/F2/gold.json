@@ -1,0 +1,722 @@
+{
+ "case_id": "F2",
+ "product": "Orbit F2 Desk Fan",
+ "conditions": [
+  {
+   "key": "standard",
+   "label": "Standard (23 °C)"
+  },
+  {
+   "key": "humid",
+   "label": "Humid (35 °C / 85 % RH)"
+  },
+  {
+   "key": "cold",
+   "label": "Cold (0 °C)"
+  }
+ ],
+ "rows": [
+  {
+   "condition": "standard",
+   "test_name": "Airflow output",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-201",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "specification": {
+     "value": "≥ 1.8 m³/min at speed 3",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Airflow output",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "Mean − 3σ ≥ 1.8 m³/min",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-011",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Airflow output"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Noise level",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-202",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Noise level"
+     }
+    },
+    "specification": {
+     "value": "≤ 42 dB(A) at speed 1, 1 m",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Noise level"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Noise level",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples ≤ 42 dB(A)",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Noise level"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-012",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Noise level"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Oscillation angle",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-203",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Oscillation angle"
+     }
+    },
+    "specification": {
+     "value": "80° ± 5°",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Oscillation angle"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Oscillation angle",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples within 75° to 85°",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Oscillation angle"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-013",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Oscillation angle"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Tip-over switch",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-204",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The motor shall stop within 2 s when the fan tilts beyond 15°.",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Tip-over switch",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-014",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Tip-over switch"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Button actuation force",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-205",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Button actuation force"
+     }
+    },
+    "specification": {
+     "value": "3 N to 6 N",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Button actuation force"
+     }
+    },
+    "n": {
+     "value": 15,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Button actuation force",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": null,
+     "status": "MISSING",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Button actuation force"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-015",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Button actuation force"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Remote control range",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-206",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Remote control range"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The remote shall operate the fan at 6 m in line of sight.",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Remote control range"
+     }
+    },
+    "n": {
+     "value": 30,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Remote control range",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Remote control range"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-087",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Remote control range"
+     }
+    }
+   }
+  },
+  {
+   "condition": "standard",
+   "test_name": "Guard finger probe",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-207",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Guard finger probe"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The test finger shall not touch moving parts through the guard.",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Guard finger probe"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Guard finger probe",
+      "column": "Standard (23 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Guard finger probe"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-016",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Guard finger probe"
+     }
+    }
+   }
+  },
+  {
+   "condition": "humid",
+   "test_name": "Airflow output",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-201",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "specification": {
+     "value": "≥ 1.8 m³/min at speed 3",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Airflow output",
+      "column": "Humid (35 °C / 85 % RH)"
+     }
+    },
+    "acceptance": {
+     "value": "Mean − 3σ ≥ 1.8 m³/min",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-011",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Airflow output"
+     }
+    }
+   }
+  },
+  {
+   "condition": "humid",
+   "test_name": "Noise level",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-202",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Noise level"
+     }
+    },
+    "specification": {
+     "value": "≤ 42 dB(A) at speed 1, 1 m",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Noise level"
+     }
+    },
+    "n": {
+     "value": 20,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Noise level",
+      "column": "Humid (35 °C / 85 % RH)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples ≤ 42 dB(A)",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Noise level"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-012",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Noise level"
+     }
+    }
+   }
+  },
+  {
+   "condition": "humid",
+   "test_name": "Tip-over switch",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-204",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The motor shall stop within 2 s when the fan tilts beyond 15°.",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Tip-over switch",
+      "column": "Humid (35 °C / 85 % RH)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-014",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Tip-over switch"
+     }
+    }
+   }
+  },
+  {
+   "condition": "humid",
+   "test_name": "Button actuation force",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-205",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Button actuation force"
+     }
+    },
+    "specification": {
+     "value": "3 N to 6 N",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Button actuation force"
+     }
+    },
+    "n": {
+     "value": 15,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Button actuation force",
+      "column": "Humid (35 °C / 85 % RH)"
+     }
+    },
+    "acceptance": {
+     "value": null,
+     "status": "MISSING",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Button actuation force"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-015",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Button actuation force"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Airflow output",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-201",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "specification": {
+     "value": "≥ 1.8 m³/min at speed 3",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "n": {
+     "value": 10,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Airflow output",
+      "column": "Cold (0 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "Mean − 3σ ≥ 1.8 m³/min",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Airflow output"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-011",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Airflow output"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Oscillation angle",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-203",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Oscillation angle"
+     }
+    },
+    "specification": {
+     "value": "80° ± 5°",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Oscillation angle"
+     }
+    },
+    "n": {
+     "value": 10,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Oscillation angle",
+      "column": "Cold (0 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "All samples within 75° to 85°",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Oscillation angle"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-013",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Oscillation angle"
+     }
+    }
+   }
+  },
+  {
+   "condition": "cold",
+   "test_name": "Tip-over switch",
+   "fields": {
+    "req_id": {
+     "value": "OF2-R-204",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "specification": {
+     "value": "Pass/Fail: The motor shall stop within 2 s when the fan tilts beyond 15°.",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "n": {
+     "value": 59,
+     "source": {
+      "doc_id": "VP-OF2-003",
+      "rev": "B",
+      "row": "Tip-over switch",
+      "column": "Cold (0 °C)"
+     }
+    },
+    "acceptance": {
+     "value": "0 failures in n samples",
+     "status": "SOURCED",
+     "source": {
+      "doc_id": "PRS-OF2-001",
+      "rev": "C",
+      "row": "Tip-over switch"
+     }
+    },
+    "test_instruction": {
+     "value": "TM-OF2-014",
+     "source": {
+      "doc_id": "TMX-OF2-002",
+      "rev": "A",
+      "row": "Tip-over switch"
+     }
+    }
+   }
+  }
+ ],
+ "conflicts": [
+  {
+   "test_name": "Noise level",
+   "field": "specification",
+   "authoritative": "≤ 42 dB(A) at speed 1, 1 m",
+   "other": "≤ 45 dB(A) at speed 1, 1 m",
+   "other_doc": "TMX-OF2-002"
+  }
+ ],
+ "planted": {
+  "attribute_tests": [
+   "Tip-over switch",
+   "Remote control range",
+   "Guard finger probe"
+  ],
+  "missing_acceptance": [
+   "Button actuation force"
+  ],
+  "superseded_differs": [
+   "Button actuation force"
+  ],
+  "pattern_break_method": [
+   "Remote control range"
+  ],
+  "previous_model_distractor": [
+   "Noise level",
+   "Airflow output",
+   "Button actuation force"
+  ]
+ }
+}
